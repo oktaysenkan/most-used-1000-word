@@ -49,11 +49,11 @@ answerButton.forEach((element) => {
     var checkedText = element.querySelector(".text");
     console.log(checkedText.innerHTML, currentWord.Turkish);
 
-    var footer = document.querySelector(".footer")
+    var container = document.querySelector(".container")
     if (checkedText.innerHTML.toLowerCase() === currentWord.Turkish.toLowerCase()) {
-      footer.setAttribute("style", "background: #219653;")
+      container.setAttribute("style", "background: #219653;")
     } else {
-      footer.setAttribute("style", "background: #DE3535;")
+      container.setAttribute("style", "background: #DE3535;")
     }
 
     answers.classList.remove("slide-animation");
@@ -62,7 +62,7 @@ answerButton.forEach((element) => {
     setTimeout(() => {
       answers.classList.add("slide-animation");
       content.classList.add("slide-animation");
-    }, 600)
+    }, 500)
 
     setTimeout(() => {
       loadNewWord();

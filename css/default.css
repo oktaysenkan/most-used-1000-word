@@ -41,23 +41,15 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  background: #1046FF;
 }
 
 .header {
-  background: #fff;
-  padding: 50px 30px 30px 30px;
-  margin-bottom: 50px;
+  padding: 30px 30px 30px 30px;
 }
 
 .header .app-bar {
   display: flex;
-}
-
-.header .app-bar .back {
-  display: flex;
-  color: #B3B3B3;
-  font-size: 20px;
-  align-items: center;
 }
 
 .header .app-bar .question-order {
@@ -68,50 +60,51 @@ body {
 }
 
 .app-bar .question-order span.current {
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 500;
-  color: #000;
+  color: #fff;
 }
 
 .app-bar .question-order span.total {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
-  color: rgb(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255, 0.5);
 }
 
 .header .progress {
-  margin-top: 30px;
-  height: 4px;
+  margin-top: 5px;
+  height: 3px;
   width: auto;
-  background: #1046FF;
-  position: relative;
+  background: #fff;
 }
 
 .header .progress-border {
   width: auto;
   height: 1px;
-  background: rgba(179, 179, 179, 0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 
-.header .content {
-  margin-top: 40px;
+.content {
   width: auto;
   font-size: 34px;
+  display: flex;
+  flex: 1;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
-.header .content .word {
-  color: #000;
+.content .word {
+  color: #fff;
 }
 
-.header .content .description {
+.content .description {
   color: #B3B3B3;
   font-weight: 300;
 }
 
 .footer {
   display: flex;
-  flex: 1;
-  background: linear-gradient(180.68deg, #1046FF 2.19%, #1544E3 94.42%);
 }
 
 .footer .answers {
