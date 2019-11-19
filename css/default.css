@@ -45,7 +45,7 @@ body {
 }
 
 .header {
-  padding: 30px 30px 30px 30px;
+  padding: 30px;
 }
 
 .header .app-bar {
@@ -59,12 +59,13 @@ body {
   align-items: baseline;
 }
 
-.app-bar .question-order span.current {
+.app-bar .question-order span.correct {
   font-size: 18px;
   font-weight: 500;
   color: #fff;
 }
 
+.app-bar .question-order span.slash,
 .app-bar .question-order span.total {
   font-size: 12px;
   font-weight: 500;
@@ -109,7 +110,7 @@ body {
 
 .footer .answers {
   flex: 1;
-  padding: 50px 30px;
+  padding: 30px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

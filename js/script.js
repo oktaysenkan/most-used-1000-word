@@ -1,5 +1,8 @@
 import data from './data.js';
 
+var correctCount = 0;
+var totalCount = 0;
+
 var currentWord;
 loadNewWord();
 
@@ -49,12 +52,26 @@ answerButton.forEach((element) => {
     var checkedText = element.querySelector(".text");
     console.log(checkedText.innerHTML, currentWord.Turkish);
 
+    var correctCountElement = document.querySelector(".correct");
+    var totalCountElement = document.querySelector(".total");
+
+    totalCount++;
+
     var container = document.querySelector(".container")
     if (checkedText.innerHTML.toLowerCase() === currentWord.Turkish.toLowerCase()) {
       container.setAttribute("style", "background: #219653;")
+      correctCount++;
     } else {
       container.setAttribute("style", "background: #DE3535;")
     }
+
+    correctCountElement.innerHTML = correctCount.toString();
+    totalCountElement.innerHTML = totalCount.toString();
+
+    let percentCorrectAnswer = 100 / (totalCount / correctCount);
+    let progress = document.querySelector(".progress");
+    progress.setAttribute("style", "width: " + percentCorrectAnswer + "%;");
+
 
     answers.classList.remove("slide-animation");
     content.classList.remove("slide-animation");
