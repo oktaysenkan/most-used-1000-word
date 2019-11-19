@@ -25,6 +25,10 @@ body {
   height: 100%;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   font-family: 'Product Sans', sans-serif;
   font-weight: normal;
@@ -163,5 +167,27 @@ body {
     color: #1046FF;
     background: #FFFFFF;
     margin: 10px;
+  }
+}
+
+.slide-animation {
+  animation: slide 1.4s normal;
+}
+
+@keyframes slide {
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+  }
+  61% {
+    opacity: 0;
+    transform: translate(10%);
+  }
+  51% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translate(-30%);
   }
 }

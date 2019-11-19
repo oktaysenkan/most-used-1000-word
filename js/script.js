@@ -33,6 +33,17 @@ targetElement.forEach((element) => {
 
     setInterval(() => {
       element.classList.add("click-animation");
-    }, 10)
+    }, 50)
+
+    var answers = document.querySelector(".answers")
+    var content = document.querySelector(".content")
+
+    answers.classList.remove("slide-animation");
+    content.classList.remove("slide-animation");
+
+    setInterval(() => {
+      answers.classList.add("slide-animation");
+      content.classList.add("slide-animation");
+    }, 600)
   }))
 });
