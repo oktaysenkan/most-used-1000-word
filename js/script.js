@@ -31,7 +31,7 @@ targetElement.forEach((element) => {
   element.addEventListener('click', ((e) => {
     element.classList.remove("click-animation");
 
-    setInterval(() => {
+    setTimeout(() => {
       element.classList.add("click-animation");
     }, 50)
 
@@ -41,9 +41,11 @@ targetElement.forEach((element) => {
     answers.classList.remove("slide-animation");
     content.classList.remove("slide-animation");
 
-    setInterval(() => {
+    setTimeout(() => {
       answers.classList.add("slide-animation");
       content.classList.add("slide-animation");
+      console.log("aa");
+
     }, 600)
   }))
 });
