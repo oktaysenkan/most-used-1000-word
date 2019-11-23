@@ -29,19 +29,14 @@ body {
   display: none;
 }
 
-* {
+.container {
   font-family: 'Product Sans', sans-serif;
   font-weight: normal;
-  padding: 0;
-  margin: 0;
-}
-
-.container {
+  background: #1046FF;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: #1046FF;
 }
 
 .header {
